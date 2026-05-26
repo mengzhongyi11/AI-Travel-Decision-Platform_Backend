@@ -1,0 +1,19 @@
+{
+  "name": "weather-nodejs",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "@escook/express-joi": "^1.1.1",
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "ioredis": "^5.10.0",
+    "openai": "^6.32.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
+}
