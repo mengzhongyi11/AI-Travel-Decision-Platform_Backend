@@ -4,6 +4,7 @@ import weatherRouter from './router/weather.js'
 import weatherMapRouter from './router/weather_map.js'
 import openAIRouter from './router/openai.js'
 import chartRouter from './router/chart.js'
+import schemaRouter from './router/schema.js'
 import streamRouter from './router/stream.js'
 
 const app = express()
@@ -27,6 +28,7 @@ app.use('/weather', weatherRouter)
 app.use('/weatherMap', weatherMapRouter)
 app.use('/openai', openAIRouter)
 app.use('/api/chart', chartRouter)
+app.use('/api/chart', schemaRouter)
 app.use('/api/stream', streamRouter)
 
 app.listen(3001, () => {

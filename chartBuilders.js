@@ -107,6 +107,7 @@ export function buildDailyOption(dailyData, seriesType) {
     },
     legend: {
       data: [cfg.name1, cfg.name2],
+      selectedMode: 'multiple',
       textStyle: { color: "#cccccc" },
     },
     grid: { left: "3%", right: "3%", bottom: "5%", top: "10%", height: "70%" },
@@ -192,6 +193,7 @@ function buildTempOption(fxTimes, temps, dews) {
     grid: { left: "5%", right: "5%", top: "15%", bottom: "18%" },
     legend: {
       data: ["气温", "露点"],
+      selectedMode: 'multiple',
       bottom: 0,
       textStyle: { color: "#cccccc", fontSize: 9 },
       itemWidth: 10,
